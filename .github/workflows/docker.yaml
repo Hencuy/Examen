@@ -3,7 +3,7 @@ name: Docker Build and Push
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: tu_usuario/hola-mundo:latest
+        tags: hencuy1227/hm:latest
