@@ -18,7 +18,7 @@ jobs:
           password: ${{secrects.DOCKERHUB_TOKEN}}
       - name: Build Docker Image
         run: |
-          docker build -t pagina-prueba .
+          docker build -t pm .
       - name: push Docker File to Docker hub
         run: docker tag pagina-prueba ${{secrets.DOCKERHUB_USERNAME}}/hm:latest
              docker push ${{secrets.DOCKERHUB_USERNAME}}/pagina-hm:latest
